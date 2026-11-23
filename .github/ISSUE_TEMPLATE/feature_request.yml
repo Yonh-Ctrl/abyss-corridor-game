@@ -1,0 +1,27 @@
+name: Feature request
+description: Suggest a ship, mode, event, balance change or quality-of-life improvement
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like to add or change?
+      placeholder: A new ship, bullet pattern, boss phase, layer event, UI improvement...
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why does it fit the game?
+      description: Explain the gameplay or design reason, not only the theme.
+    validations:
+      required: true
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Implementation idea (optional)
+      description: Which table or function would you touch?
+      render: text
+    validations:
+      required: false

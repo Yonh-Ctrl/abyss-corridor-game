@@ -1,0 +1,57 @@
+name: Bug report
+description: Report a reproducible problem in Abyss Corridor
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Please include enough detail to reproduce the issue.
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: v3.5.0, another release, or a source commit
+      placeholder: v3.5.0
+    validations:
+      required: true
+  - type: dropdown
+    id: runtime
+    attributes:
+      label: How are you running it?
+      options:
+        - Windows portable build
+        - From source with Python
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Select ship ...
+        2. Reach layer ...
+        3. Press ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / screenshots
+      description: Paste crash.log, traceback, or attach a screenshot.
+      render: text
+    validations:
+      required: false
