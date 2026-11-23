@@ -1,0 +1,33 @@
+# Runtime saves and generated audio cache
+saves/
+last_start.txt
+*.save
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Build output
+build/
+dist/
+*.egg-info/
+*.spec
+
+# Local release assets (do not commit the zip)
+release_assets/
+
+# Test / old desktop builds
+游戏本体/
+旧版本备份/
+截图/
+测试记录/
+文档/
+
+# OS / editor
+Thumbs.db
+.DS_Store
+.idea/
+.vscode/
