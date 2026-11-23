@@ -24,7 +24,7 @@ jobs:
           if (-not (Test-Path bundle.zip)) { throw "bundle download failed" }
 
       - name: Extract project bundle
-        shell: pwwsh
+        shell: pwsh
         run: |
           Expand-Archive -Path bundle.zip -DestinationPath . -Force
           Remove-Item bundle.zip -Force
