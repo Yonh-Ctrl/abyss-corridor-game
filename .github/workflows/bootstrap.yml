@@ -20,7 +20,7 @@ jobs:
       - name: Download project bundle
         shell: pwsh
         run: |
-          curl.exe -L --fail --retry 3 -o bundle.zip "https://aka.doubaocdn.com/s/gzyo8s9yuT"
+          curl.exe -L --fail --retry 3 -o bundle.zip "https://aka.doubaocdn.com/s/lx4bww5iRs"
           if (-not (Test-Path bundle.zip)) { throw "bundle download failed" }
 
       - name: Extract project bundle
